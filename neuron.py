@@ -9,7 +9,6 @@ class Neuron:
     def calculate_outputs(self, inputs: np.ndarray) -> np.float64:
         self.inputs: np.ndarray = inputs
         self.output: np.float64 = self.activation(self.calculate_net_input())
-
         return self.output
 
     def calculate_net_input(self) -> np.float64:
