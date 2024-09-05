@@ -13,7 +13,7 @@ class Layer:
         out += " ".join(str(neuron.bias) for neuron in self.neurons)
         return out
 
-    def feed_forward(self, inputs: np.ndarray) -> np.ndarray:
+    def calculate_outputs(self, inputs: np.ndarray) -> np.ndarray:
         return np.array([neuron.calculate_output(inputs) for neuron in self.neurons])
 
     def get_outputs(self) -> np.ndarray:

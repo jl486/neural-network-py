@@ -6,7 +6,7 @@ class Neuron:
         self.bias: np.float64 = bias
         self.weights: np.ndarray = np.array([])
 
-    def calculate_outputs(self, inputs: np.ndarray) -> np.float64:
+    def calculate_output(self, inputs: np.ndarray) -> np.float64:
         self.inputs: np.ndarray = inputs
         self.output: np.float64 = self.activation(self.calculate_net_input())
         return self.output
